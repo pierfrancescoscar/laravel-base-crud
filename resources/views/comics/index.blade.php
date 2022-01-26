@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('main-content')
-    <section class="container p-5">
+    <section class="container p-3">
         <div class="row">
             <div class="col-12">
                 <table class="table table-striped">
@@ -23,7 +23,7 @@
                                 <td class="text-truncate" style="max-width: 250px">{{ $comic->description }}</td>
                                 <td>{{ $comic->price }}</td>
                                 <td>
-                                    <a class="btn btn-success" href="/">show</a>
+                                    <a class="btn btn-success" href="{{ route('comics.show', $comic->id)}}">show</a>
                                 </td>
                             </tr>
                         @endforeach
