@@ -12,7 +12,7 @@
             </div>
             {{-- Description --}}
             <div class="col-8">
-                <p>{{$comic->description}}</p>
+                <p>{!!$comic->description!!}</p>
             </div>
         </div>
     </section>
