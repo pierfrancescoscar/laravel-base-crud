@@ -6,7 +6,7 @@
 
         <div class="row text-center">
             <div class="col-12">
-                <form action="{{'comics.store'}}" method="POST">
+                <form action="{{route('comics.store')}}" method="POST">
                     @csrf
                     {{-- Title --}}
                     <label for="title" class="form-label">Title</label>
@@ -30,7 +30,7 @@
                     </div>
                     {{-- Submit --}}
                     <div class="mb-3">
-                        <button class="btn btn-primary">Create</button>
+                        <button type="submit" class="btn btn-primary">Create</button>
                     </div>
                 </form>
             </div>
