@@ -9,9 +9,8 @@
                 </div>
             <div class="row text-center">
                 <h4>There are a lot of comics here.
-                    Click on the button to see all of them.
                 </h4>
-                <a href="{{route('comics.index')}}">Click here</a>
+                <a href="{{route('comics.index')}}">Click here to see all of them</a>
             </div>
         </div>
     </div>
