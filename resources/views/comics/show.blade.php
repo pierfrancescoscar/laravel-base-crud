@@ -14,6 +14,8 @@
             <div class="col-8">
                 <p>{!!$comic->description!!}</p>
             </div>
+
+            <a class="mt-5" href="{{route('comics.index')}}">Back to archive</a>
         </div>
     </section>
 @endsection
