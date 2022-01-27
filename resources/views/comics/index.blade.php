@@ -11,7 +11,9 @@
                             <th>title</th>
                             <th>description</th>
                             <th>price</th>
-                            <th colspan="3">action</th>
+                            <th>action</th>
+                            <th>edit</th>
+                            <th>delete</th>
                         </tr>
                     </thead>
 
@@ -24,6 +26,9 @@
                                 <td>{{ $comic->price }}</td>
                                 <td>
                                     <a class="btn btn-success" href="{{ route('comics.show', $comic->id)}}">show</a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-primary" href="{{ route('comics.edit', $comic->id)}}">edit</a>
                                 </td>
                             </tr>
                         @endforeach
